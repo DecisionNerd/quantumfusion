@@ -1,3 +1,0 @@
-# QUANTUMFUSION MISSION
-
-data curation
