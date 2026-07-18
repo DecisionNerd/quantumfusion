@@ -1,0 +1,52 @@
+---
+title: QuantumFusion
+description: Unsupervised knowledge discovery over multi-type facts in a unified vector space.
+template: splash
+hero:
+  tagline: Fusing individual quanta of knowledge in a shared vector space — composite-entity creation via eigenspace orthogonality.
+  actions:
+    - text: Read the docs
+      link: /quantumfusion/overview/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/DecisionNerd/quantumfusion
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+QuantumFusion is an early-stage **research project** for unsupervised knowledge discovery over
+**facts** — `(head, relation, tail)` triplets whose data points each carry a type (numerical,
+categorical, textual, temporal, geospatial, or relational) — within a single, unified vector space.
+
+<CardGrid stagger>
+  <Card title="Composite entity creation" icon="puzzle">
+    The headline: fuse facts and entities into higher-order composites and derive the facts that
+    must hold about them.
+  </Card>
+  <Card title="Composite hygiene" icon="magnifier">
+    A critical sub-focus: cluster existing composites to flag duplicates and false ("munged")
+    combinations — each with a geometric rationale.
+  </Card>
+  <Card title="Multi-type, one space" icon="setting">
+    Make heterogeneous typed data comparable, with a per-type breakdown of *why* two facts are
+    alike.
+  </Card>
+  <Card title="Explainable by construction" icon="approve-check">
+    Every score exposes the eigenspaces and principal angles that produced it.
+  </Card>
+</CardGrid>
+
+:::note[Scope]
+This project is the **algorithm** (a Rust crate; a Python binding may follow), not a data-system
+integration. Wiring it into a live knowledge store is envisioned as a follow-on library.
+:::
+
+## Start here
+
+- [Documentation overview](/quantumfusion/overview/) — how the docs are organized.
+- [Product](/quantumfusion/product/) — what this is and why it exists.
+- [Architecture](/quantumfusion/engineering/architecture/) — components, data model, and key flows.
+- [Related work](/quantumfusion/strategy/related-work/) — the verified literature review.
