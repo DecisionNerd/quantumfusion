@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import mermaid from 'astro-mermaid';
 
 // GitHub Pages project site: https://decisionnerd.github.io/quantumfusion/
 // If a custom domain or user/org page is used later, update `site` and clear `base`.
@@ -8,6 +9,8 @@ export default defineConfig({
   site: 'https://decisionnerd.github.io',
   base: '/quantumfusion',
   integrations: [
+    // Must come BEFORE starlight so it can transform ```mermaid code blocks.
+    mermaid({ theme: 'default', autoTheme: true }),
     starlight({
       title: 'QuantumFusion',
       description:
